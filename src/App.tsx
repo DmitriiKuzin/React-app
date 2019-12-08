@@ -1,14 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Prop } from './classes/Prop';
 
-const App: React.FC = () => {
+
+const App: React.FC<Prop> = (prop:Prop) => {
+  
+   
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Nice Boobs Bitch! {prop.testString}
         </p>
         <a
           className="App-link"
@@ -23,4 +27,7 @@ const App: React.FC = () => {
   );
 }
 
+
+
+// 
 export default App;

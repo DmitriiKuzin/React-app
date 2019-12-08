@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.css';
 import * as serviceWorker from './serviceWorker';
+import { Prop } from './classes/Prop';
+import { InputTest } from './test-input';
+import { TimerComponent } from './timer-component'
+import App from './App';
+import { tsPropertySignature } from '@babel/types';
+import { Cycles } from './Cycles';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+
+
+
+
+let kist:Array<string>
+
+ReactDOM.render(
+
+    [ <Cycles />],
+
+
+    document.getElementById('root'));
+
+serviceWorker.register()
